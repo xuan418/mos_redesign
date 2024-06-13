@@ -1,0 +1,88 @@
+@import url(reset.css);
+
+body{
+    width: 1440px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #E60012;
+    width: 1200px;
+    height: 100px;
+    font-size: 14px;
+    padding: 0 120px;
+}
+
+.hd-inner{
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    width: 114px;
+    height: 100%;
+    float: left;
+}
+
+.logo img{
+    width:90px ;
+    height:62px ;
+    padding: 19px 0 19px 24px;
+}
+
+.sild{
+    width: 1086px;
+    height:100%;
+    float:right;
+}
+
+.topsild{
+    width: 100%;
+    height: 50%;
+}
+
+.topsild ul{
+    width: 100%;
+    height:100%;
+    background-color: black;
+
+}
+
+.downsild{
+    width: 100%;
+    height: 50%;
+}
+
+.downsild ul{
+    width: 100%;
+    height:100%;
+    background-color: black;
+}
+
+.downsild li{
+    width: 150px;
+    height: 100%;    
+    display: inline-block;
+
+
+}
+.downsild img{
+    width: 20px;
+    height: 20px;
+    padding: 10px 4px 10px 12px;
+}
+
+
+.downsild a{
+    width: 80px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+
+}

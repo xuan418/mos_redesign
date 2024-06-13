@@ -1,0 +1,398 @@
+body{
+    width: 1440px;
+    height: auto;
+    font-family:sans-serif,微軟正黑體, Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: white;
+    margin: 0 auto;
+}
+
+/* ------------------------article------------------------ */
+.wrapper{
+    width:1315px;
+    height: auto;
+    padding-top: 100px;
+}
+.main{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* ------------Leftph------------ */
+
+.Leftph{
+    width: 505px;
+    height: calc(100vh - 100px);
+    margin: 60px 60px 60px 120px;
+    text-align: center;
+    position: sticky;
+    top: 100px;
+}
+
+.Burgerimg{
+    height: 100%;
+    min-height: 0;
+    position: relative;
+}
+
+.Burgerimg img{
+    display: block;
+    width: 350px;
+    height: auto;
+    box-sizing: border-box;
+    object-fit:contain
+}
+
+/* ------------Rightdetil------------ */
+
+.Rightdetail{
+    width: 570px;
+    height: auto;
+    padding: 30px;
+    background-color: #FBF8F3;
+}
+
+/* ------------name------------ */
+
+.Rightdetail .Name{
+    width: 570px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.Rightdetail .Name .bgtitle{
+    width: 570px;
+    height: 41px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Rightdetail .Name .bgname{
+    width: 177px;
+    height: 41px; 
+    display: inline-block;
+}
+
+.Rightdetail .Name .bgname h1{
+    width: 177px;
+    height: 41px;
+    line-height: 41px;
+    font-size: 28px;
+}
+
+
+.Rightdetail .Name .price{
+    width: 106px;    
+    display: inline-block;
+}
+
+.Rightdetail .Name .price .Before{
+    width: 50px;
+    display: inline-block;
+}
+
+.Rightdetail .Name .price .Before h4{
+    width: 50px;
+    
+    font-size: 22px;
+    color: #666;
+    text-decoration:line-through;
+
+}
+
+.Rightdetail .Name .price .Special{
+    width: 50px;
+    height: 41px;
+    line-height: 41px;
+    display: inline-block;
+}
+
+.Rightdetail .Name .price .Special h4{
+    width: 50px;
+    height: 41px;
+    line-height: 41px;
+    font-size: 22px;
+    color:#E60012;
+}
+
+.productinfo{
+    width: 570px;
+    height: auto;
+    margin-bottom: 24px;
+}
+
+.productinfo p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.tag{
+    width: 570px;
+    height: 24px;
+    display: inline-block;
+}
+
+.tag li{
+    font-size: 14px;
+    width: auto;
+    height: 24px;
+    margin: 0 auto;
+    margin-right: 24px;
+    display: inline-block;
+}
+
+.tag img{
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+
+/* ------------Upgradeset------------ */
+.Upgradeset{
+    width: 570px;
+    height: auto;
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+}
+
+.settitle{
+    width: 570px;
+    height: 81px;
+}
+
+.settitle h2{
+    font-size: 22px;
+    height: 81px;
+    line-height: 81px;
+}
+
+
+.setcard{
+    width: 160px;
+    height: 212px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.setcard .setimg{
+    width: 160px;
+    height: 135px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setcard .setimg img{
+    width: 110px;
+    height: 103px;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+
+.setinfo{
+    width: 160px;
+    height: auto;
+    text-align: center;
+}
+
+
+.setinfo .title{
+    width: 160px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.setinfo .title h4{
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+
+.setinfo .addprice{
+    width: 160px;
+    height: auto;
+}
+
+.setinfo .addprice h4{
+    font-size: 16px;
+}
+
+/* ------------Changeset------------ */
+
+
+.Changeset{
+    width: 570px;
+    height: auto;
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+}
+.setcombo{
+    width: 570px;
+    height: auto;
+}
+
+.setcombo ul{
+    width: 570px;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 40px;
+}
+
+.setcombo li{
+    width: 160px;
+    height: 262px;
+}
+
+/* ------------Addon------------ */
+
+.Addon{
+    width: 570px;
+    height: auto;
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+}
+
+
+/* ------------Info------------ */
+
+.Info{
+    width: 570px;
+    height: auto;
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+}
+
+.Nutrition{
+    width: 530px;
+    height: 64px;
+    padding: 20px;
+}
+
+.Nutrition li{
+    width: auto;
+    height: 64px;
+    margin-right:45px;
+    display: inline-block;
+    line-height: 1.6;
+}
+
+.Nutrition h3{
+    font-size: 20px;
+}
+
+.Nutrition h4{
+    font-size: 14px;
+}
+
+/* ------------Notice------------ */
+
+.Notice{
+    width: 570px;
+    height: auto;
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+}
+
+.Noticecontent{
+    width: 550px;
+    height: auto;
+    padding-left: 20px;
+}
+
+.Noticecontent li{
+    font-size: 16px;
+    line-height: 1.6;
+    list-style-type: disc;
+}
+
+
+/* ---------------------Bottombtn--------------------- */
+
+.Bottombtn{
+    width: 1440px;
+    height: 50px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Backbtn{
+    width: 300px;
+    height: 50px;
+    border: 1px solid #FF7A00;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+}
+
+.Backbtn img{
+    width: 24PX;
+    height: 24PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4;
+}
+
+.Backbtn P{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 67px;
+    font-size: 16px;
+    color:#FF7A00 ;
+    font-weight: bold;
+}
+
+.OrderNow{
+    width: 300px;
+    height: 50px;
+    background-color: #E60012;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OrderNow img{
+    width: 24PX;
+    height: 24PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4;
+}
+
+.OrderNow P{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 67px;
+    font-size: 16px;
+    color:white ;
+    font-weight: bold;
+}
