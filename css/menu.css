@@ -284,6 +284,7 @@ body{
 }
 
 .card .Txt .Original h4{
+    color: #333;
     width: 36px;
     height: 23px;
     line-height: 23px;
