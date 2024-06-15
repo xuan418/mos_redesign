@@ -543,6 +543,9 @@ footer{
     .fttop > .ftright:nth-child(3){
         order: 3;
     }
-    
+
+    .floatbox{
+        right: 4px;
+    }
 
 }
