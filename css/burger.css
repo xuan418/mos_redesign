@@ -42,8 +42,6 @@ body{
     display: block;
     width: 350px;
     height: auto;
-    box-sizing: border-box;
-    object-fit:contain
 }
 
 /* ------------Rightdetil------------ */
@@ -401,9 +399,20 @@ body{
 }
 
 @media screen and (max-width: 414px) {
+
+    .wrapper{
+        width:100%;
+        height: auto;
+        padding-top: 75.58px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
     .banner_map {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         height: 40px;
         padding: 8px 10px;
         box-sizing: border-box;
@@ -427,5 +436,87 @@ body{
     .banner_map a:last-child:after{
         content: "";
     }
+
+    /* ------------topph------------ */
+    .Leftph{
+        width: calc(100vw - 20px);
+        height: auto;
+        margin: 30px 10px;
+        position:static;
+    }
+    
+    .Burgerimg{
+        height: auto;
+        min-height: 0;
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Burgerimg img{
+        width: 250px;
+        height: auto;
+    }
+
+    /* ------------downdetil------------ */
+
+    .Rightdetail{
+        width: 100%;
+        height: auto;
+        padding: 40px 0 ;
+        box-sizing: border-box;
+    }
+
+    /* ------------name------------ */
+    .Rightdetail .Name{
+        width: calc(100vw - 20px);
+        margin: 0 10px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+    
+    .Rightdetail .Name .bgtitle{
+        width: auto;
+    }
+    
+    .Rightdetail .Name .bgname h1{
+        font-size: 24px;
+    }
+    
+    
+    .Rightdetail .Name .price .Before h4{
+        font-size: 20px;
+    }
+    
+    .Rightdetail .Name .price .Special h4{
+        font-size: 20px;
+    }
+    
+    .productinfo{
+        width: calc(100vw - 20px);
+        margin-bottom: 30px;
+    }
+    
+    .tag{
+        width: calc(100vw - 20px);
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .tag ul{
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    
+    .tag li{
+        margin: 0 0;
+        margin-right: 0;
+    }
+
 
 }

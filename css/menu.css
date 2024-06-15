@@ -311,7 +311,7 @@ body{
 
     .banner_map {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         height: 40px;
         padding: 8px 10px;
         box-sizing: border-box;
