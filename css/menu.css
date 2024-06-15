@@ -8,48 +8,52 @@ body{
 
 /* ------------------------article------------------------ */
 .wrapper{
-    width:1440px;
+    width:100%;
     height: auto;
 }
 
 /* -------Banner------- */
 .banner{
-    width: 1440px;
-    height: 500px;
+    width: 100%;
     padding-top: 100px;
 }
 
 .banner a{
-    width: auto;
-    height: auto;
-    display: inline-block;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .banner img{
     width: 100%;
-    height: 500px;
     box-sizing: border-box;
 }
+
+.banner_map{
+    display: none;
+}
+
 
 /* -----------------nav-menu----------------- */
 
 .nav-menu{
-    width: 1440px;
+    width: 100%;
     height: 160px;
     text-align: center;
 }
 
 .menu-list{
-    width: 1440px;
+    width: 100%;
     height: 70px;
     margin-bottom: 20px;
     box-shadow: 0 14px 28px -12px rgba(0,0,0,.12);
 }
 
 .menu-list ul{
-    width: 1200px;
+    width: 100%;
     height: 100%;
-    margin: 0 120px;
+    padding: 0 120px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 }
@@ -70,14 +74,18 @@ body{
 
 }
 
+.m_menulist{
+    display: none;
+}
+
 .BG-category{
-    width: 1440px;
+    width: 100%;
     height: 70px;
 
 }
 
 .BG-category ul{
-    width: 1200px;
+    width: calc( 100vw - 240px);
     height: 100%;
     margin: 0 120px;
     display: inline-block;
@@ -110,7 +118,7 @@ body{
 /* -----------------product----------------- */
 
 .product1{
-    width: 1440px;
+    width: 100%;
     margin: 80px 0;
     height: auto;
 }
@@ -124,7 +132,7 @@ body{
 
 
 .product2{
-    width: 1440px;
+    width: 100%;
     margin: 80px 0;
     height: auto;
 }
@@ -138,7 +146,7 @@ body{
 
 
 .product3{
-    width: 1440px;
+    width: 100%;
     margin: 80px 0;
     height: auto;
 }
@@ -155,13 +163,13 @@ body{
 
 
 .card{
-    width: 1200px;
+    width: calc(100vw - 240px);
     height: auto;
     margin: 0 auto;
 }
 
 .card ul{
-    width: 1200px;
+    width: calc(100vw - 240px);
     height: auto;
     
     list-style: none;
@@ -291,5 +299,292 @@ body{
     padding-bottom: 0px;
 }
 
+
+/*--------------- RWD：414px ---------------*/
+
+@media screen and (max-width: 414px) {
+
+    .banner{
+        padding-top: 75.58px ;
+        margin-bottom: 60px;
+    }
+
+    .banner_map {
+        display: flex;
+        align-items: flex-start;
+        height: 40px;
+        padding: 8px 10px;
+        box-sizing: border-box;
+    }
+
+    .banner_map a{
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+        margin: 0 0 ;
+
+        color: #333;
+        text-decoration: none;
+    }
+
+    .banner_map a::after{
+        content: ">";
+        margin: 0 5px;
+    }
+
+    .banner_map a:last-child:after{
+        content: "";
+    }
+
+    .nav-menu{
+        width: 100%;
+        height: 112px;
+        text-align: center;
+    }
+
+    .menu-list{
+        display: none;
+    }
+
+
+    .m_menulist{
+        display: block;
+        width: calc(100vw - 20px);
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .m_menulist a.main{
+        width: calc(100vw - 20px);
+        height: 42px;
+        border: 1px solid #ccc;
+        padding: 0 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        text-decoration: none;
+        color: white;
+        background-color: #E60012;
+        font-weight: bold;
+
+        position: relative;
+    }
+
+    .m_menulist a.main i{
+        display: block;
+        color: white;
+    }
+
+    .m_menulist ul{
+        z-index: 10;
+        width:calc(100vw - 20px) ;
+
+        position: absolute;
+        display: none;
+
+    }
+
+    .m_menulist ul li a{
+        display: block;
+        text-decoration: none;
+        color: #333;
+        height: 42px;
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        border: 1px solid #d1d1d1;
+        background-color: white;
+
+    }
+
+    .BG-category{
+        width: 100%;
+        height: 50px;
+    
+    }
+    
+    .BG-category ul{
+        width: calc( 100vw - 20px);
+        height: 100%;
+        margin: 0 10px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    
+    .BG-category a{
+        font-size: 14px;
+        color: #333;
+        text-decoration: none;
+    
+        width: auto;
+        height: 50px;
+        line-height: 50px;
+    }
+
+
+    .product1{
+        padding: 60px 0;
+        margin: 0 0 ;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .product1 h1{
+        font-size: 21px;
+        margin-bottom:60px;
+    }
+    
+    .product2{
+        padding: 60px 0;
+        margin: 0 0 ;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .product2 h1{
+        font-size: 21px;
+        margin-bottom:60px;
+    }
+    
+    .product3{
+        padding: 60px 0;
+        margin: 0 0;
+        box-sizing: border-box;
+    }
+    
+    .product3 h1{
+        font-size: 21px;
+        margin-bottom:60px;
+    }
+
+
+
+    .card{
+        width: calc(100vw - 20px);
+    }
+    
+    .card ul{
+        width: calc(100vw - 20px);
+        gap: 24px;
+    }
+    
+    .card li{
+        width: 180px;
+        height: 262px;
+
+    }
+
+    .card li a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: end;
+    }
+    
+    .cardbtn{
+        width: 180px;
+        height: 262px;
+    }
+    
+    .card .tag{
+        width: 67px;
+        height: 20px;
+        background-color: #009D39;
+        margin-left: 77px;
+    }
+    
+    .card .tag p{
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        height: 20px;
+        line-height: 20px;
+    }
+    
+    .card .img {
+        width: 144px;
+        height: 144px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .card .img img{
+        box-sizing: border-box;
+        width: 144px;
+        height: auto;
+        display:block;
+    
+    }
+    
+    .Txt{
+        width: 180px;
+    }
+    
+    .card .Txt .title h4{
+        font-size: 14px;
+    }
+    
+    .card .Txt .price{
+        width: 180px;
+    }
+    
+    .card .Txt .Before{
+        width: 32px;
+        padding-right: 4px;
+    }
+    
+    .card .Txt .Before h4{
+        width: 32px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    
+    .card .Txt .Special{
+        width: 32px;    
+    }
+    
+    .card .Txt .Special h4{
+        width: 36px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        color:#E60012;
+        padding-bottom: 0px;
+    }
+    
+    .card .Txt .Original{
+        width: 36px;    
+        display: inline-block;
+    }
+    
+    .card .Txt .Original h4{
+        color: #333;
+        width: 36px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        padding-bottom: 0px;
+    }
+
+}
+
+@media screen and (max-width: 393px) {
+
+    .card ul{
+        gap: 0px;
+    }
+
+}
 
 
