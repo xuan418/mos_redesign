@@ -54,7 +54,7 @@ header{
 .topsild{
     width: calc(100vw - 354px);
     height: 50%;
-    padding: 0 20px;
+    padding: 0 0px;
     display: flex;
     align-items: center;
     font-size: 0;
@@ -95,7 +95,7 @@ header{
 .downsild{
     width: calc(100vw - 354px);
     height: 50%;
-    padding: 0 20px;
+    padding: 0 0px;
     font-size: 0;
     box-sizing: border-box;
 }
@@ -352,9 +352,9 @@ footer{
     font-size: 0;
 }
 
-/*--------------- RWD：414px ---------------*/
+/*--------------- RWD：430px ---------------*/
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 992px) {
 
     /* ------header------ */
 
@@ -548,4 +548,160 @@ footer{
         right: 4px;
     }
 
+}
+
+
+
+@media screen and (max-width: 1284px) {
+
+    .map ul li ::after{
+        content: "|";
+        padding: 0 8px;
+    }
+    
+}
+
+@media screen and (max-width: 1092px) {
+
+
+    footer{
+        height: 444px;
+    }
+    
+    .ftsild{
+        width: 100%;
+        height: 100%;
+        padding: 0 0;
+    }
+
+    .fttop{
+        width: 100%;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .ftleft{
+        text-align: center;
+        height: auto;
+    }
+    
+    .ftlog{
+        display: none;
+    }
+
+    .ftsocial{
+        width: 414px;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 8px;
+    }
+    
+    .ftsocial a{
+        width: 22px;
+    }
+
+
+    .ftmd{
+        width:auto;
+        height: 265px;
+    }
+    
+    .map{
+        width: 414px;
+        height: 265px;
+    }
+    
+    .map ul {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+    }
+    
+    .map ul li{
+        width: 414px;
+        height: 30px;
+
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .map ul li ::after{
+        content: "";
+        padding: 0 0;
+    }
+
+    .map a{
+        width: 414px;
+        margin: 0 0;
+    }
+
+
+    .ftright{
+        width: 414px;
+        padding: 10px 0;
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .ftright h4{
+        display: none;
+    }
+
+    .ftimg{
+        margin-top: 0;
+    }
+
+    .ftdown{
+        width: 100%;
+        height: 87px;
+    }
+    
+    .ftdown ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        box-sizing: border-box;
+        gap: 8px;
+    }
+    
+    .ftdown li{
+        color: #62945b;
+        line-height: normal;
+        font-size: 12px;
+        margin-right: 0;
+    }
+
+    .fttop > .ftleft:nth-child(1){
+        order: 2;
+    }
+
+    .fttop > .ftmd:nth-child(2){
+        order: 1;
+    }
+
+    .fttop > .ftright:nth-child(3){
+        order: 3;
+    }
+
+    .floatbox{
+        right: 4px;
+    }
 }

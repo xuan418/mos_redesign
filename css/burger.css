@@ -1,5 +1,5 @@
 body{
-    font-family:sans-serif,微軟正黑體, Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     color: #333;
     background-color: white;
     margin: 0 auto;
@@ -8,7 +8,7 @@ body{
 
 /* ------------------------article------------------------ */
 .wrapper{
-    width:1315px;
+    width:100%;
     height: auto;
     padding-top: 100px;
 }
@@ -24,9 +24,9 @@ body{
 /* ------------Leftph------------ */
 
 .Leftph{
-    width: 505px;
+    width: 50%;
     height: calc(100vh - 100px);
-    margin: 60px 60px 60px 120px;
+    margin: 60px 0;
     text-align: center;
     position: sticky;
     top: 100px;
@@ -39,31 +39,32 @@ body{
 }
 
 .Burgerimg img{
-    display: block;
     width: 350px;
     height: auto;
+    text-align: center;
 }
 
 /* ------------Rightdetil------------ */
 
 .Rightdetail{
-    width: 570px;
+    width: 50%;
     height: auto;
-    padding: 30px;
+    padding: 20px 24px;
+    box-sizing: border-box;
     background-color: #FBF8F3;
 }
 
 /* ------------name------------ */
 
 .Rightdetail .Name{
-    width: 570px;
+    width: 100%;
     height: auto;
     padding-top: 20px;
     padding-bottom: 60px;
 }
 
 .Rightdetail .Name .bgtitle{
-    width: 570px;
+    width: 100%;
     height: 41px;
     margin-bottom: 40px;
     display: flex;
@@ -119,9 +120,9 @@ body{
 }
 
 .productinfo{
-    width: 570px;
+    width: 100%;
     height: auto;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .productinfo p{
@@ -130,26 +131,28 @@ body{
 }
 
 .tag{
-    width: 570px;
-    height: 24px;
+    width: 100%;
+    height: auto;
     display: inline-block;
+}
+
+.tag ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px 0;
 }
 
 .tag li{
     font-size: 14px;
     width: auto;
-    height: 24px;
-    margin: 0 auto;
     margin-right: 24px;
-    display: inline-block;
+    height: auto;
 }
 
 .tag img{
     width: 24px;
     height: 24px;
     margin-right: 4px;
-    box-sizing: border-box;
-    display: inline-block;
     vertical-align: middle;
 
 }
@@ -157,14 +160,14 @@ body{
 
 /* ------------Upgradeset------------ */
 .Upgradeset{
-    width: 570px;
+    width: 100%;
     height: auto;
     padding: 40px 0;
     border-top: 1px solid #ccc;
 }
 
 .settitle{
-    width: 570px;
+    width: 100%;
     height: 81px;
 }
 
@@ -174,12 +177,94 @@ body{
     line-height: 81px;
 }
 
+.upsetcard{
+    padding: 15px 10px 35px;
+    box-sizing: border-box;
+}
+
+.upsetcard .setimg{
+    width: 160px;
+    height: 135px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upsetcard .setimg img{
+    width: 110px;
+    height: 103px;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+.setinfo{
+    width: 160px;
+    height: auto;
+    text-align: center;
+}
+
+
+.setinfo .title{
+    width: auto;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.setinfo .title h4{
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+
+.setinfo .addprice{
+    width: auto;
+    height: auto;
+}
+
+.setinfo .addprice h4{
+    font-size: 16px;
+}
+
+/* ------------Changeset------------ */
+
+
+.Changeset{
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+}
+.setcombo{
+    width: 100%;
+    height: auto;
+}
+
+.setcombo ul{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.setcombo li{
+    width: 33%;
+    height: auto;
+}
 
 .setcard{
-    width: 160px;
-    height: 212px;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding: 15px 10px 35px;
+    box-sizing: border-box;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .setcard .setimg{
@@ -198,67 +283,10 @@ body{
     font-size: 0;
 }
 
-
-.setinfo{
-    width: 160px;
-    height: auto;
-    text-align: center;
-}
-
-
-.setinfo .title{
-    width: 160px;
-    height: auto;
-    margin-bottom: 8px;
-}
-
-.setinfo .title h4{
-    font-size: 16px;
-    line-height: 1.3;
-}
-
-
-.setinfo .addprice{
-    width: 160px;
-    height: auto;
-}
-
-.setinfo .addprice h4{
-    font-size: 16px;
-}
-
-/* ------------Changeset------------ */
-
-
-.Changeset{
-    width: 570px;
-    height: auto;
-    padding: 40px 0;
-    border-top: 1px solid #ccc;
-}
-.setcombo{
-    width: 570px;
-    height: auto;
-}
-
-.setcombo ul{
-    width: 570px;
-    height: auto;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px 40px;
-}
-
-.setcombo li{
-    width: 160px;
-    height: 262px;
-}
-
 /* ------------Addon------------ */
 
 .Addon{
-    width: 570px;
+    width: 100%;
     height: auto;
     padding: 40px 0;
     border-top: 1px solid #ccc;
@@ -268,21 +296,22 @@ body{
 /* ------------Info------------ */
 
 .Info{
-    width: 570px;
+    width: 100%;
     height: auto;
     padding: 40px 0;
     border-top: 1px solid #ccc;
 }
 
 .Nutrition{
-    width: 530px;
-    height: 64px;
+    width: 100%;
+    height: auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .Nutrition li{
     width: auto;
-    height: 64px;
+    height: auto;
     margin-right:45px;
     display: inline-block;
     line-height: 1.6;
@@ -299,16 +328,17 @@ body{
 /* ------------Notice------------ */
 
 .Notice{
-    width: 570px;
+    width: 100%;
     height: auto;
     padding: 40px 0;
     border-top: 1px solid #ccc;
 }
 
 .Noticecontent{
-    width: 550px;
+    width: 100%;
     height: auto;
     padding-left: 20px;
+    box-sizing: border-box;
 }
 
 .Noticecontent li{
@@ -321,7 +351,7 @@ body{
 /* ---------------------Bottombtn--------------------- */
 
 .Bottombtn{
-    width: 1440px;
+    width: 100%;
     height: 50px;
     margin-top: 60px;
     margin-bottom: 100px;
@@ -344,7 +374,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 60px;
 }
 
 .Backbtn img{
@@ -366,39 +395,12 @@ body{
     font-weight: bold;
 }
 
-.OrderNow{
-    width: 300px;
-    height: 50px;
-    background-color: #E60012;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* -------------------------RWD------------------------- */
 
-.OrderNow img{
-    width: 24PX;
-    height: 24PX;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4;
-}
 
-.OrderNow P{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 67px;
-    font-size: 16px;
-    color:white ;
-    font-weight: bold;
-}
+/* -------------------------mobile------------------------- */
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 430px) {
 
     .wrapper{
         width:100%;
@@ -463,7 +465,7 @@ body{
     .Rightdetail{
         width: 100%;
         height: auto;
-        padding: 40px 0 ;
+        padding: 0 0 ;
         box-sizing: border-box;
     }
 
@@ -471,12 +473,13 @@ body{
     .Rightdetail .Name{
         width: calc(100vw - 20px);
         margin: 0 10px;
-        padding-bottom: 20px;
+        padding: 30px 0;
         box-sizing: border-box;
     }
     
     .Rightdetail .Name .bgtitle{
         width: auto;
+        margin-bottom: 25px;
     }
     
     .Rightdetail .Name .bgname h1{
@@ -494,7 +497,7 @@ body{
     
     .productinfo{
         width: calc(100vw - 20px);
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
     
     .tag{
@@ -508,7 +511,7 @@ body{
         display: flex;
         align-items: flex-start;
         align-content: flex-start;
-        gap: 30px;
+        gap: 20px;
         flex-wrap: wrap;
     }
 
@@ -525,13 +528,16 @@ body{
         width: calc(100vw - 20px);
         height: auto;
         margin: 0 10PX;
-        padding: 20px 0;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        box-sizing: border-box;
         border-top: 1px solid #ccc;
     }
     
     .settitle{
         width: calc(100vw - 20px);
         height: 41px;
+        margin-bottom: 25px;
     }
     
     .settitle h2{
@@ -539,32 +545,60 @@ body{
         height: 41px;
         line-height: 41px;
     }
-    
+
+
+/* --------------Card-------------- */
+
+    .upsetcard{
+        display: flex;
+        align-items: start;
+        justify-content: flex-end;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .upsetcard .setimg{
+        width: 110px;
+        height: 100%;
+        margin-bottom: 0px;
+    }
     
     .setcard{
-        width: 160px;
-        height: 232px;
-        padding-bottom: 0;
+        padding: 15px 10px 35px;
         box-sizing: border-box;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     
     .setcard .setimg{
-        width: 160px;
+        width: 110px;
+        height: 100%;
+        margin-bottom: 0px;
+    }
+
+    .setcard .setimg img{
+        width: 110px;
         height: auto;
+        margin-bottom: 0;
 
         display: flex;
         align-items: center;
     }
     
     .setinfo{
-        width: 160px;
+        width: auto;
     }
     
     
     .setinfo .title{
-        width: 160px;
+        width: auto;
         height: auto;
-        margin-bottom: 8px;
+        margin: 12px 0 ;
     }
     
     .setinfo .title h4{
@@ -572,7 +606,7 @@ body{
     }
     
     .setinfo .addprice{
-        width: 160px;
+        width: auto;
     }
     
     .setinfo .addprice h4{
@@ -584,32 +618,94 @@ body{
         width: calc(100vw - 20px);
         height: auto;
         margin: 0 10PX;
-        padding: 20px 0;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        box-sizing: border-box;
         border-top: 1px solid #ccc;
     }
+    
     .setcombo{
         width: calc(100vw - 20px);
         height: auto;
+        display: flex;
     }
-    
+
     .setcombo ul{
         width: calc(100vw - 20px);
-        height: auto;
-    
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px 40px;
     }
     
     .setcombo li{
-        width: 160px;
-        height: 232px;
+        width: 50%;
+        height: auto;
+    }
 
+    /* ------------Addon------------ */
+    .Addon{
+        width: calc(100vw - 20px);
+        margin: 0 10PX;
+    }
 
+    /* ------------Info------------ */
 
-}
-
+    .Info{
+        width: calc(100vw - 20px);
+        height: auto;
+        margin: 0 10PX;
+    }
     
+    .Nutrition{
+        width: calc(100vw - 20px);
+        height: auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        gap:8px 12px;
+    }
+    
+    .Nutrition li{
+        width: auto;
+        height: auto;
+        margin-right:20px;
+    }
+    
+    .Nutrition h3{
+        font-size: 18px;
+    }
+    
+    .Nutrition h4{
+        font-size: 14px;
+    }
 
+    /* ------------Notice------------ */
+
+    .Notice{
+        width: calc(100vw - 20px);
+        height: auto;
+        margin: 0 10PX;
+        border-top: 1px solid #ccc;
+    }
+    
+    .Noticecontent{
+        width: calc(100vw - 20px);
+        height: auto;
+        padding-left: 20px;
+    }
+    
+    .Noticecontent li{
+        font-size: 14Px;
+        line-height: 1.6;
+        list-style-type: disc;
+    }
+
+
+    .Backbtn{
+        width: 165px;
+    }
+    
+    .Backbtn img{
+        width: 20PX;
+        height: 20PX;
+    }
 
 }
