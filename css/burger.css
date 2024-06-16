@@ -519,4 +519,97 @@ body{
     }
 
 
+/* ------------Upgradeset------------ */
+
+    .Upgradeset{
+        width: calc(100vw - 20px);
+        height: auto;
+        margin: 0 10PX;
+        padding: 20px 0;
+        border-top: 1px solid #ccc;
+    }
+    
+    .settitle{
+        width: calc(100vw - 20px);
+        height: 41px;
+    }
+    
+    .settitle h2{
+        font-size: 20px;
+        height: 41px;
+        line-height: 41px;
+    }
+    
+    
+    .setcard{
+        width: 160px;
+        height: 232px;
+        padding-bottom: 0;
+        box-sizing: border-box;
+    }
+    
+    .setcard .setimg{
+        width: 160px;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+    }
+    
+    .setinfo{
+        width: 160px;
+    }
+    
+    
+    .setinfo .title{
+        width: 160px;
+        height: auto;
+        margin-bottom: 8px;
+    }
+    
+    .setinfo .title h4{
+        font-size: 14px;
+    }
+    
+    .setinfo .addprice{
+        width: 160px;
+    }
+    
+    .setinfo .addprice h4{
+        font-size: 14px;
+    }
+
+    /* ------------Changeset------------ */
+    .Changeset{
+        width: calc(100vw - 20px);
+        height: auto;
+        margin: 0 10PX;
+        padding: 20px 0;
+        border-top: 1px solid #ccc;
+    }
+    .setcombo{
+        width: calc(100vw - 20px);
+        height: auto;
+    }
+    
+    .setcombo ul{
+        width: calc(100vw - 20px);
+        height: auto;
+    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px 40px;
+    }
+    
+    .setcombo li{
+        width: 160px;
+        height: 232px;
+
+
+
+}
+
+    
+
+
 }
