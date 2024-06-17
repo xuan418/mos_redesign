@@ -15,7 +15,7 @@ header{
 .container{
     width: 100%;
     height: 100px;
-    padding: 0 120px;
+    padding: 0 20px;
     box-sizing: border-box;
 
     position: fixed;
@@ -23,12 +23,14 @@ header{
     z-index: 3000;
 
     display: flex;
+    justify-content: space-between;
 }
 
 .logo {
     width: 114px;
     height: 100%;
     display: block;
+    margin-right: 30px;
 }
 
 .logo a{
@@ -44,7 +46,7 @@ header{
 }
 
 .container .sild{
-    width: calc(100vw - 354px) ;
+    width: 100%;
     height: 100%;
     background-color: #E60012;
     box-sizing: border-box;
@@ -52,7 +54,7 @@ header{
 
 /* 上層選單 */
 .topsild{
-    width: calc(100vw - 354px);
+    width: 100%;
     height: 50%;
     padding: 0 0px;
     display: flex;
@@ -74,9 +76,8 @@ header{
     display: inline-block;
 }
 
-.topsild ul li ::after{
+.topsild>ul>li.border>a::after{
     content: "|";
-    color: white;
     padding: 0 8px;
 }
 
@@ -93,7 +94,7 @@ header{
 
 /* 下層選單 */
 .downsild{
-    width: calc(100vw - 354px);
+    width: 100%;
     height: 50%;
     padding: 0 0px;
     font-size: 0;
@@ -104,10 +105,14 @@ header{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+}
+
+.downsild li{
+    width: 100%;
 }
 
 .downsild a{
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -198,125 +203,96 @@ header{
 footer{
     background-color: #A0D99E;
     width: 100%;
-    height: 150px;
-    font-size: 14px;
+    height: auto;
 }
 
 .ftsild{
     width: 100%;
-    height: 150px;
-    padding: 0 120px;
+    height: auto;
+    padding: 16px 0;
     box-sizing: border-box;
 }
 
 .fttop{
     width: 100%;
-    height: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ftleft{
-    text-align: center;
-    margin-top: 20px;
-}
-
-.ftlog{
-    width: 101px;
-    height: 68px;
-    margin-bottom: 8px;
-
-}
-
-.ftlog img{
-    width: 101;
-    height: 68px;
-    display: block;
-}
-
-.ftsocial a{
-    width: 20px;
-}
-
-
-.ftmd{
-    width:auto;
-    height: 100px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    border-bottom:0.5px solid #62945B;
 }
 
 .map{
     width: 100%;
     height: 100%;
+    padding: 0 120px;
+    box-sizing: border-box;
 }
 
 .map ul {
     width: auto;
     height: 100%;
     display: flex;
-    align-items: center;
 }
 
 .map ul li{
     width: auto;
     height: auto;
-    display: inline-block;
+    margin-right: 24px;
 }
-
-.map ul li ::after{
-    content: "|";
-    padding: 0 24px;
-}
-
 .map a{
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
     color: #333;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 19px;
-    text-align: center;
-}
-
-.ftright{
-    width: auto ;
-    height: auto;
-
-}
-
-.ftright h4{
-    display: inline-block;
-    color: #333333;
-    font-size: 14px;
-}
-
-.ftimg{
-    margin-top: 12px;
-    height: 31px;
     display: flex;
-    align-items: flex-start;
-}
-
-.ftimg a{
-    margin-right: 8px;
+    align-items: center;
 }
 
 
 .ftdown{
     width: 100%;
-    height: 30px;
+    height: auto;
 }
 
-.ftdown ul{
-    text-align: center;
+.ftconnection{
+    padding: 16px 120px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-.ftdown li{
-    color: #62945b;
-    line-height: 30px;
+.ftcon p{
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: #666;
+}
+
+.ftsocial a{
+    margin-right: 12px;
+}
+
+.ftright {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.ftright_m{
+    display: none;
+}
+
+.ftcon_m{
+    display: none;
+}
+
+.ftfont span{
+    padding: 0 120px;
     font-size: 12px;
-    margin-right: 8px;
-    display: inline-block;
+    color: #62945B;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* -------------------------floatbox------------------------ */
@@ -354,9 +330,9 @@ footer{
 
 /*--------------- RWD：430px ---------------*/
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 960px) {
 
-    /* ------header------ */
+/* ------header------ */
 
     header{
         height: 75.58px;
@@ -403,13 +379,10 @@ footer{
         display: flex;
         justify-content: center;
     }
+}
 
 
-    /* ------footer------ */
-
-    footer{
-        height: 444px;
-    }
+@media screen and (max-width: 430px) {
     
     .ftsild{
         width: 100%;
@@ -419,129 +392,121 @@ footer{
 
     .fttop{
         width: 100%;
-        height: 360px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-
-    .ftleft{
-        text-align: center;
-        height: auto;
-    }
-    
-    .ftlog{
-        display: none;
+        border: none;
     }
 
-    .ftsocial{
-        width: 414px;
-
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        gap: 8px;
-    }
-    
-    .ftsocial a{
-        width: 22px;
-    }
-
-
-    .ftmd{
-        width:auto;
-        height: 265px;
-    }
-    
     .map{
-        width: 414px;
-        height: 265px;
+        width: 100%;
+        height: auto;
+        padding: 16px 0px;
     }
     
     .map ul {
         width: auto;
         height: 100%;
+
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         gap: 8px;
 
     }
     
     .map ul li{
-        width: 414px;
+        width: auto;
         height: 30px;
+        margin-right: 0px;
 
         display: flex;
         height: 30px;
         justify-content: center;
         align-items: center;
     }
-    
-    .map ul li ::after{
-        content: "";
-        padding: 0 0;
-    }
 
     .map a{
-        width: 414px;
+        width: auto;
         margin: 0 0;
-    }
-
-
-    .ftright{
-        width: 414px;
-        padding: 10px 0;
-        box-sizing: border-box;
-
-        display: flex;
-        justify-content: center;
-        align-content: center;
-
-    }
-
-    .ftright h4{
-        display: none;
-    }
-
-    .ftimg{
-        margin-top: 0;
+        font-size: 16px;
     }
 
     .ftdown{
         width: 100%;
-        height: 87px;
+        height: auto;
     }
-    
-    .ftdown ul{
+
+    .ftconnection{
+        padding: 16px 0px 0px;
         display: flex;
         flex-direction: column;
+
+    }
+
+    .ftleft{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    .ftsocial{
+        width: 100%;
+        display: flex;
         justify-content: center;
-        align-items: center;
-        padding: 10px 0;
-        box-sizing: border-box;
+        align-content: center;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .ftsocial a{
+        margin-right: 0px;
+    }
+
+    .ftsocial img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .ftcon{
+        display: none;
+    }
+
+    .ftcon_m{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+
+    .ftcon_m p{
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #666;
+        text-align: center;
+    }
+
+
+
+    .ftright{
+        display: none;
+        margin-bottom: 8px;
+    }
+
+    .ftright_m{
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .ftright_m{
+        width: 100%;
+        display: flex;
+        justify-content: center;
         gap: 8px;
     }
-    
-    .ftdown li{
-        color: #62945b;
-        line-height: normal;
-        font-size: 12px;
-        margin-right: 0;
-    }
 
-    .fttop > .ftleft:nth-child(1){
-        order: 2;
-    }
-
-    .fttop > .ftmd:nth-child(2){
-        order: 1;
-    }
-
-    .fttop > .ftright:nth-child(3){
-        order: 3;
+    .ftfont span{
+        padding: 0 0 ;
+        justify-content: center;
     }
 
     .floatbox{
@@ -551,157 +516,14 @@ footer{
 }
 
 
+@media screen and (max-width: 992px) {
 
-@media screen and (max-width: 1284px) {
-
-    .map ul li ::after{
-        content: "|";
-        padding: 0 8px;
-    }
-    
-}
-
-@media screen and (max-width: 1092px) {
-
-
-    footer{
-        height: 444px;
-    }
-    
-    .ftsild{
-        width: 100%;
-        height: 100%;
-        padding: 0 0;
-    }
-
-    .fttop{
-        width: 100%;
-        height: 360px;
+    .map ul{
         display: flex;
-        flex-direction: column;
         align-items: center;
-    }
-    
-
-    .ftleft{
-        text-align: center;
-        height: auto;
-    }
-    
-    .ftlog{
-        display: none;
-    }
-
-    .ftsocial{
-        width: 414px;
-
-        display: flex;
-        justify-content: center;
-        align-content: center;
+        flex-wrap: wrap;
         gap: 8px;
     }
-    
-    .ftsocial a{
-        width: 22px;
-    }
 
 
-    .ftmd{
-        width:auto;
-        height: 265px;
-    }
-    
-    .map{
-        width: 414px;
-        height: 265px;
-    }
-    
-    .map ul {
-        width: auto;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-
-    }
-    
-    .map ul li{
-        width: 414px;
-        height: 30px;
-
-        display: flex;
-        height: 30px;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .map ul li ::after{
-        content: "";
-        padding: 0 0;
-    }
-
-    .map a{
-        width: 414px;
-        margin: 0 0;
-    }
-
-
-    .ftright{
-        width: 414px;
-        padding: 10px 0;
-        box-sizing: border-box;
-
-        display: flex;
-        justify-content: center;
-        align-content: center;
-
-    }
-
-    .ftright h4{
-        display: none;
-    }
-
-    .ftimg{
-        margin-top: 0;
-    }
-
-    .ftdown{
-        width: 100%;
-        height: 87px;
-    }
-    
-    .ftdown ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 0;
-        box-sizing: border-box;
-        gap: 8px;
-    }
-    
-    .ftdown li{
-        color: #62945b;
-        line-height: normal;
-        font-size: 12px;
-        margin-right: 0;
-    }
-
-    .fttop > .ftleft:nth-child(1){
-        order: 2;
-    }
-
-    .fttop > .ftmd:nth-child(2){
-        order: 1;
-    }
-
-    .fttop > .ftright:nth-child(3){
-        order: 3;
-    }
-
-    .floatbox{
-        right: 4px;
-    }
 }

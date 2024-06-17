@@ -217,15 +217,6 @@ body{
     align-items: self-end;
 }
 
-/* .card .img {
-    font-size: 0;
-    width: 260px;
-    height: 178px;
-    display: flex;
-    justify-content: center;
-    align-items: self-end;
-} */
-
 .card .img img{
     box-sizing: border-box;
     width: 170px;
