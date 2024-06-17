@@ -247,7 +247,7 @@ footer{
 .map{
     width: 100%;
     height: 100%;
-    padding: 0 120px;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
@@ -284,7 +284,7 @@ footer{
 }
 
 .ftconnection{
-    padding: 16px 120px 0px;
+    padding: 16px 20px 0px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -325,7 +325,7 @@ footer{
 }
 
 .ftfont span{
-    padding: 0 120px;
+    padding: 0 20px;
     font-size: 12px;
     color: #62945B;
     display: flex;
@@ -364,7 +364,7 @@ footer{
     font-size: 0;
 }
 
-/*--------------- RWD：430px ---------------*/
+/*--------------- RWD---------------*/
 
 @media screen and (max-width: 960px) {
 

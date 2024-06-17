@@ -29,8 +29,35 @@ body{
     box-sizing: border-box;
 }
 
-.banner_map{
-    display: none;
+.banner_map {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+}
+
+.banner_map a{
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 ;
+
+    color: #333;
+    text-decoration: none;
+}
+
+.banner_map a::after{
+    content: ">";
+    margin: 0 5px;
+}
+
+.banner_map a:last-child:after{
+    content: "";
+}
+
+.banner_map a:hover{
+    color: #E60012;
 }
 
 
@@ -59,7 +86,7 @@ body{
 }
 
 .menu-list li{
-    width: 150px;
+    width: 100%;
     height: 100%;
 }
 
@@ -67,11 +94,24 @@ body{
     font-size: 18px;
     color: #333;
     text-decoration: none;
-
-    width: 150px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: 70px;
     line-height: 70px;
 
+}
+
+.menu-list>ul>li.onclick>a{
+    background-color: #ffeeef;
+    color:#E60012 ;
+    font-weight: bold;
+}
+
+.menu-list a:hover{
+    background-color: #ffeeef;
+    color: #E60012;
+    font-weight: bold;
 }
 
 .m_menulist{
@@ -108,8 +148,13 @@ body{
     line-height: 70px;
 }
 
+.BG-category a:hover{
+    color: #E60012;
+    text-decoration: underline;
+}
 
-.BG-category ul li ::after{
+
+.BG-category>ul>li.bgline>a::after{
     content: "|";
     color: #333;
     padding: 0 8px;
@@ -164,40 +209,64 @@ body{
 
 .card{
     width: calc(100vw - 240px);
+    max-width: 1200px;
     height: auto;
     margin: 0 auto;
 }
 
 .card ul{
-    width: calc(100vw - 240px);
+    width: 100%;
     height: auto;
     
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
 }
 
 .card li{
-    width: 280px;
-    height: 300px;
+    width: 25%;
 }
 
 .cardbtn{
-    display: block;
-    width: 280px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
     height: 300px;
     text-decoration: none;
 }
 
-.card .tag{
-    width: 67px;
-    height: 20px;
-    background-color: #009D39;
-    margin-left: 158px;
+a.link i.fa-solid{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 1000;
+    font-size: 35px;
+    z-index: 99;
+    color: transparent;
+    text-align: center;
+    line-height: 300px;
+    transition: all 0.5s ease;
+
+    width: 100%;
+    height: 100%;
 }
 
-.card .tag p{
+a.link i.fa-solid:hover{
+    color:#E60012;
+    background-color: #ffffff59;
+    box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.068);
+}
+
+.cardbtn .tag{
+    width: 67px;
+    height: 20px;
+    background-color:#FF7A00;
+    align-content: center;
+    margin: 9px auto;
+
+}
+
+.cardbtn .tag p{
     font-size: 12px;
     font-weight: bold;
     color: white;
@@ -207,9 +276,11 @@ body{
 }
 
 .card .img {
-    width: 260px;
-    height: 178px;
+    width: 100%;
+    height: 50%;
     padding: 0 10px;
+    box-sizing: border-box;
+    position: relative;
 
     font-size: 0;
     display: flex;
@@ -219,10 +290,9 @@ body{
 
 .card .img img{
     box-sizing: border-box;
-    width: 170px;
+    width: 130px;
     height: auto;
     display:block;
-
 }
 
 .Txt{
@@ -237,7 +307,6 @@ body{
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    padding-bottom: 8px;
 }
 
 .card .Txt .price{
@@ -293,38 +362,47 @@ body{
 
 /*--------------- RWD：414px ---------------*/
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1024px) {
 
+    .card li{
+        width: 30%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
     .banner{
         padding-top: 75.58px ;
-        margin-bottom: 60px;
     }
+}
 
-    .banner_map {
-        display: flex;
-        align-items: center;
-        height: 40px;
-        padding: 8px 10px;
+
+@media screen and (max-width: 828px) {
+
+    .menu-list ul{
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
         box-sizing: border-box;
-    }
-
-    .banner_map a{
-        width: auto;
         display: flex;
-        align-items: flex-start;
-        margin: 0 0 ;
-
-        color: #333;
-        text-decoration: none;
+        justify-content: space-between;
     }
 
-    .banner_map a::after{
-        content: ">";
-        margin: 0 5px;
+
+    .card li{
+        width: 50%;
+        height: auto;
     }
 
-    .banner_map a:last-child:after{
-        content: "";
+}
+
+
+@media screen and (max-width: 629px) {
+    /*-----------menu list------------- */
+
+    .banner{
+        margin-bottom: 60px;
     }
 
     .nav-menu{
@@ -336,7 +414,6 @@ body{
     .menu-list{
         display: none;
     }
-
 
     .m_menulist{
         display: block;
@@ -422,6 +499,141 @@ body{
     }
 
 
+    
+}
+
+
+@media screen and (max-width: 576px) {
+
+    /*----------- banner------------- */
+    .banner{
+        margin-bottom: 60px;
+    }
+
+    .banner_map {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding: 8px 10px;
+        box-sizing: border-box;
+    }
+
+    .banner_map a{
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+        margin: 0 0 ;
+
+        color: #333;
+        text-decoration: none;
+    }
+
+    .banner_map a::after{
+        content: ">";
+        margin: 0 5px;
+    }
+
+    .banner_map a:last-child:after{
+        content: "";
+    }
+
+    /*-----------menu list------------- */
+
+    .nav-menu{
+        width: 100%;
+        height: 112px;
+        text-align: center;
+    }
+
+    .menu-list{
+        display: none;
+    }
+
+    .m_menulist{
+        display: block;
+        width: calc(100vw - 20px);
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .m_menulist a.main{
+        width: calc(100vw - 20px);
+        height: 42px;
+        border: 1px solid #ccc;
+        padding: 0 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        text-decoration: none;
+        color: white;
+        background-color: #E60012;
+        font-weight: bold;
+
+        position: relative;
+    }
+
+    .m_menulist a.main i{
+        display: block;
+        color: white;
+    }
+
+    .m_menulist ul{
+        z-index: 10;
+        width:calc(100vw - 20px) ;
+
+        position: absolute;
+        display: none;
+
+    }
+
+    .m_menulist ul li a{
+        display: block;
+        text-decoration: none;
+        color: #333;
+        height: 42px;
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        border: 1px solid #d1d1d1;
+        background-color: white;
+
+    }
+
+    .BG-category{
+        width: 100%;
+        height: 50px;
+    
+    }
+    
+    .BG-category ul{
+        width: calc( 100vw - 20px);
+        height: 100%;
+        margin: 0 10px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    
+    .BG-category a{
+        font-size: 14px;
+        color: #333;
+        text-decoration: none;
+    
+        width: auto;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /*-----------漢堡種類大標------------- */
+
     .product1{
         padding: 60px 0;
         margin: 0 0 ;
@@ -457,19 +669,19 @@ body{
         margin-bottom:60px;
     }
 
-
+    /*-----------card------------- */
 
     .card{
-        width: calc(100vw - 20px);
+        width:calc(100vw - 20px);
     }
     
     .card ul{
-        width: calc(100vw - 20px);
-        gap: 24px;
+        width: 100%;
+
     }
     
     .card li{
-        width: 180px;
+        width: 30%;
         height: 262px;
 
     }
@@ -482,43 +694,29 @@ body{
     }
     
     .cardbtn{
-        width: 180px;
+        width: 100%;
         height: 262px;
     }
-    
-    .card .tag{
-        width: 67px;
-        height: 20px;
-        background-color: #009D39;
-        margin-left: 77px;
-    }
-    
-    .card .tag p{
-        font-size: 12px;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        height: 20px;
-        line-height: 20px;
-    }
+
     
     .card .img {
-        width: 144px;
-        height: 144px;
+        width: 100%;
+        height: 50%;
         padding: 0 10px;
         box-sizing: border-box;
     }
     
     .card .img img{
         box-sizing: border-box;
-        width: 144px;
+        width: 120px;
         height: auto;
-        display:block;
+        display: inline-block;
+        margin: 0 auto;
     
     }
     
     .Txt{
-        width: 180px;
+        width: 100%;
     }
     
     .card .Txt .title h4{
@@ -526,7 +724,7 @@ body{
     }
     
     .card .Txt .price{
-        width: 180px;
+        width: 100%;
     }
     
     .card .Txt .Before{
@@ -570,10 +768,19 @@ body{
 
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 596px) {
 
-    .card ul{
-        gap: 0px;
+    .card li{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+    .card .img img{
+        width: 120px;
+    
     }
 
 }
