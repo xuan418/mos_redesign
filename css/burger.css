@@ -175,6 +175,8 @@ body{
     font-size: 22px;
     height: 81px;
     line-height: 81px;
+    color: #E60012;
+    font-weight: bold;
 }
 
 .upsetcard{
@@ -399,7 +401,7 @@ body{
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 976px) {
     .wrapper{
         padding-top: 75.58px;
     }

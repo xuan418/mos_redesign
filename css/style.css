@@ -1,6 +1,6 @@
 
 body{
-    font-family:sans-serif,微軟正黑體, Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     color: #333;
     background-color: white; 
     margin: 0 auto;
@@ -12,20 +12,24 @@ body{
     width: 100%;
     height: auto;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 /* -------Banner------- */
 .banner{
     width: 100%;
     padding-top: 100px;
+    overflow: hidden;
 }
 
 
 .swiper {
     width: 100%;
+    overflow: hidden;
 }
 
 .swiper-slide {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +129,7 @@ body{
     padding: 100px 120px;
     text-align: center;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .burger h1{
@@ -479,7 +484,7 @@ body{
 
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 976px) {
     .banner{
         padding-top: 75.58px ;
     }
@@ -494,8 +499,7 @@ body{
     .burger{
         display: flex;
         flex-direction: column;
-        padding: 0 40px;
-        height: 410px;
+        padding: 60px 40px;
         margin-bottom: 60px;
         
     }
@@ -503,7 +507,7 @@ body{
     .burger h1{
         font-size: 32px;
         height: 30px;
-        margin-bottom: 0;
+        margin-bottom: 50px;
     }
 
     .burger .swiper {
@@ -538,10 +542,11 @@ body{
     }
 
     .menubtn{
-        margin-top: 0;
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
     .btn1{
-        margin-top: 0;
+        margin-top: 0px;
     }
 
     .location{
