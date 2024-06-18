@@ -50,6 +50,7 @@ header{
     height: 100%;
     background-color: #E60012;
     box-sizing: border-box;
+    position: relative;
 }
 
 /* 上層選單 */
@@ -140,7 +141,7 @@ header{
     padding-right: 4px;
 }
 
-/* mobile burger*/
+/*--------------------mobile burger--------------------*/
 
 .sild ul.mburger{
     background-color: #E60012;
@@ -219,6 +220,86 @@ header{
     margin-left: 0;
 }
 
+
+/*-------------------- mobile burger list--------------------*/
+
+.navbglist{
+    width: 100%;
+    background-color:white;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+}
+
+.navbglist.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navtop ul{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc ;
+}
+
+.navtop ul li{
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.navtop ul li a{
+    display: block;
+    text-decoration: none;
+    color: #60543D;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+}
+
+.navtop i{
+    margin-right: 4px;
+}
+
+.navtop a:hover{
+    background-color: #ffeeef;
+    color: #E60012;
+}
+
+.navsub ul{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.navsub ul li{
+    padding: 10px 0;
+    margin: 5px 0;
+}
+
+.navsub ul li a{
+    text-decoration: none;
+    color: #60543D;
+    font-size: 14px;
+    display: inline;
+    height: 30px;
+}
+
+.navsub>ul>li.border>a::after{
+    content: "|";
+    padding: 0 8px;
+}
+
+.navsub a:hover{
+    color: #E60012;
+}
 
 
 
@@ -366,7 +447,7 @@ footer{
 
 /*--------------- RWD---------------*/
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 976px) {
 
 /* ------header------ */
 
@@ -415,7 +496,17 @@ footer{
         display: flex;
         justify-content: center;
     }
+
+    /* navbglist */
+    .navbglist {
+        display: none;
+    }
+
+    .navbglist.show {
+        display: block;
+    }
 }
+
 
 
 @media screen and (max-width: 576px) {

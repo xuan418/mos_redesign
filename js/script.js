@@ -120,3 +120,38 @@ $(function(){
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  var burgerph = document.querySelector(".burgerph");
+  var navbglist = document.querySelector(".navbglist");
+
+  function toggleNav() {
+      var width = window.innerWidth;
+      if (width < 976) {
+          navbglist.classList.toggle("show");
+      }
+  }
+
+  burgerph.addEventListener("click", function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      toggleNav();
+  });
+
+  window.addEventListener("click", function() {
+      if (navbglist.classList.contains('show')) {
+          navbglist.classList.remove('show');
+      }
+  });
+
+  navbglist.addEventListener("click", function(event) {
+      event.stopPropagation();
+  });
+
+  window.addEventListener("resize", function() {
+      var width = window.innerWidth;
+      if (width >= 976 && navbglist.classList.contains('show')) {
+          navbglist.classList.remove('show');
+      }
+  });
+});
