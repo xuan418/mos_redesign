@@ -11,6 +11,7 @@ body{
 .wrapper{
     width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 /* -------Banner------- */
@@ -19,15 +20,35 @@ body{
     padding-top: 100px;
 }
 
-.banner a{
+
+.swiper {
     width: 100%;
-    display: block;
-    margin: 0 auto;
 }
 
-.banner img{
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-timing-function: ease-in-out
+}
+
+.swiper-slide img {
+    display: block;
     width: 100%;
-    box-sizing: border-box;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .swiper .swiper-button-next{
+    color: #E60012;
+}
+
+.banner .swiper .swiper-button-prev{
+    color: #E60012;
+}
+
+.banner .swiper .swiper-pagination-bullet-active{
+    background: #E60012;
 }
 
 /* -------news------- */
@@ -113,58 +134,47 @@ body{
     font-weight: bold;
 }
 
-.swiper{
+.burger .swiper {
     width: 100%;
-    height: 250px;
+}
+.burger .swiper-slide {
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-.swiperp-burger{
-    width: 900px;
-    height: 250px;
-}
-
-.swiperp-burger ul{
-    display: flex;
-    justify-content: space-between;
-}
-
-.swiperp-burger a{
+.burger .swiper-slide a{
     text-decoration: none;
-    font-size: 22px;
+    font-size: 16px;
     color: #333;
-    
-    display: inline-block;
-    width: 200px;
-    height: 250px;
+    line-height: 1.6;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.swiperp-burger a:hover{
-    transform:scaleZ(2PX);
-    
+.burger .swiper-slide a:hover{
+    transform:scale(1.2,1.2);
 }
 
-.swiperp-burger img{
+
+.burger .swiper-slide img {
+    display: block;
     width: 200px;
     height: 187px;
-    box-sizing: border-box;
+    object-fit: cover;
     margin-bottom: 20px;
+
 }
 
-.prevbtn a{
-    font-size: 30px;
+.burger .swiper .swiper-button-next.swiper-button-next-2{
     color: #E60012;
-    height: 250px;
-    line-height: 250px;
 }
 
-.nextbtn a {
-    font-size: 30px;
+.burger .swiper .swiper-button-prev.swiper-button-prev-2{
     color: #E60012;
-    height: 250px;
-    line-height: 250px;
 }
+
 
 .menubtn{
     width: 200px;
@@ -408,13 +418,6 @@ body{
 
 /*--------------- RWD---------------*/
 
-@media screen and (max-width: 960px) {
-    .banner{
-        padding-top: 75.58px ;
-    }
-
-}
-
 @media screen and (max-width: 1024px) {
 
     .news{
@@ -422,7 +425,7 @@ body{
     }
 
     .burger{
-        padding: 100px 20px;
+        padding: 100px 100px;
     }
 
     .location-right h2{
@@ -466,7 +469,7 @@ body{
     .servicecontent ul{
         height: auto;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -476,58 +479,22 @@ body{
 
 }
 
+@media screen and (max-width: 960px) {
+    .banner{
+        padding-top: 75.58px ;
+    }
+
+}
+
 @media screen and (max-width: 853px) {
     .banner{
         padding-top: 75.58px ;
     }
 
-    .news{
-        height: 187px;
-        padding: 40px 20px;
-        margin-bottom: 60px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .news-left{
-        width: 100%;
-        height: 75px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .news-left h4{
-        padding: 0 0;
-        line-height: 23px;
-    }
-
-    .news-left a{
-        width: 100%;
-        padding: 0 0;
-        display: flex;
-        justify-items: start;
-        align-items: start;
-
-        line-height: 1.6;
-        font-size: 14px;
-    }
-
-    .news-right{
-        width: 100%;
-        height: 16px;
-    }
-
-    .news-right a{
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-
     .burger{
         display: flex;
         flex-direction: column;
-        padding: 0 10px;
+        padding: 0 40px;
         height: 410px;
         margin-bottom: 60px;
         
@@ -539,53 +506,37 @@ body{
         margin-bottom: 0;
     }
 
-    .swiper{
+    .burger .swiper {
         width: 100%;
-        height: 273px;
-        margin-top: 16px;
-        margin-bottom: 40px;
-        box-sizing: border-box;
     }
-
-    .swiper .prevbtn img{
-        width: 30px;
-        height: 30px;
-    }
-
-    .swiperp-burger{
-        width: 250px;
-        height: 273px;
-    }
-
-
-    .swiperp-burger ul{
-        width: 250px;
-        height: 235px;
+    .burger .swiper-slide {
+    
         display: flex;
-        justify-content: space-between;
-    }
-
-    .swiperp-burger li{
-        display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
     
-    .swiperp-burger a{
+    .burger .swiper-slide a{
         text-decoration: none;
-        font-size: 22px;
+        font-size: 16px;
         color: #333;
-        
-        display: inline-block;
-        width: 250px;
-        height: 235px;
+        line-height: 1.6;
+        padding: 20px;
+        box-sizing: border-box;
     }
     
-    .swiperp-burger img{
-        width: 250px;
-        height: 235px;
-        box-sizing: border-box;
-        margin-bottom: 0;
+    .burger .swiper-slide a:hover{
+        transform:scale(1.2,1.2);
     }
+    
+    .burger .swiper-slide img {
+        display: block;
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
     .menubtn{
         margin-top: 0;
     }
@@ -727,6 +678,60 @@ body{
     
         width: 165px;
         height: 213px;
+    
+    }
+
+
+    @media screen and (max-width: 761px){
+        
+        .news{
+            height: auto;
+            padding: 20px 20px;
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    
+        .news-left{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .news-left h4{
+            padding: 0 0 20px 0;
+            line-height: 23px;
+        }
+    
+        .news-left a{
+            width: 100%;
+            padding: 0 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;
+    
+            line-height: 1.6;
+            font-size: 14px;
+        }
+    
+        .news-right{
+            width: 100%;
+            height: 16px;
+        }
+    
+        .news-right a{
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+    }
+
+    @media screen and (max-width: 576px) {
+        .burger{
+            padding: 0 20px;
+        }
     
     }
 

@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Document</title>
+    <title>MOS Redesign</title>
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <!------------------------header------------------------>
@@ -103,7 +105,7 @@
         </section>
 
 
-        <section class="product1">
+        <section class="product1" data-aos="fade-up">
             <h1>季節限定</h1>
             <div class="card">
                 <ul>
@@ -206,7 +208,7 @@
 
         </section>
 
-        <section class="product2">
+        <section class="product2" data-aos="fade-up">
             <h1>米漢堡</h1>
             <div class="card">
                 <ul>
@@ -374,7 +376,7 @@
 
         </section>
 
-        <section class="product3">
+        <section class="product3" data-aos="fade-up">
             <h1>漢堡 / 熱狗堡 / 摘鮮綠堡</h1>
             <div class="card">
                 <ul>
@@ -590,6 +592,10 @@
         <a class="orderbtn" href="#"><img src="img/ordericon.png" alt=""></a>
         <a class="topbtn" href="#"><img src="img/scrolltop.png" alt=""></a>
     </div>
-    
+ 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

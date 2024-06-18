@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Document</title>
+    <title>MOS Redesign</title>
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="script.js"></script>
 </head>
 <body>
     <!------------------------header------------------------>
@@ -55,9 +57,22 @@
     <!------------------------article------------------------>
     <article class="wrapper">
         <section class="banner">
-            <a href="#"><img src="img/banner1.jpg" alt=""></a>
-            <!-- <a href="#"><img src="img/banner2.jpg" alt=""></a>
-            <a href="#"><img src="img/banner3.jpg" alt=""></a> -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"><img src="img/banner1.jpg" alt=""></a>
+                </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="img/banner2.jpg" alt=""></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="img/banner3.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </section>
 
         <section class="news">
@@ -70,32 +85,53 @@
             </div>
         </section>
         
-    <div data-aos="fade-up">
-        <section class="burger">
+        <section class="burger" data-aos="fade-down" >
             <h1>新品上市</h1>
-            <div class="swiper">
-                <div class="prevbtn">
-                    <a href=""><i class="fa-solid fa-chevron-left"></i></a>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"><img src="img/newburger1.jpg" alt="">和風蔬活牛肉堡</a>
                 </div>
-                <div class="swiper-burger">
+                  <div class="swiper-slide">
+                    <a href="buger.html"><img src="img/newburger3.jpg" alt="">山海日珍珠堡</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="img/newburger2.jpg" alt="">摘鮮綠元氣摩力堡</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="img/product1/20240422_103904_088.jpg" alt="">豚角煮珍珠堡</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="img/product1/20230908_100643_051.jpg" alt="">超級大麥
+                        <br>元氣摩力珍珠堡</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="img/product1/20230908_100839_061.jpg" alt="">低碳植米
+                        <br>元氣摩力珍珠堡</a>
+                  </div>
+                </div>
+                <div class="swiper-button-next swiper-button-next-2"></div>
+                <div class="swiper-button-prev swiper-button-prev-2"></div>
+            </div>
+
+            <!-- <div class="swiper">
+                <div class="swiperp-burger">
                     <ul>
                         <li><a href="#"><img src="img/newburger1.jpg" alt="">和風蔬活牛肉堡</a></li>
                         <li><a href="buger.html"><img src="img/newburger3.jpg" alt="">山海日珍珠堡</a></li>
                         <li><a href="#"><img src="img/newburger2.jpg" alt="">摘鮮綠元氣摩力堡</a></li>
                     </ul>
                 </div>
-                <div class="nextbtn">
-                    <a href=""><i class="fa-solid fa-chevron-right"></i></a>
-                </div>
-            </div>
-            <div class="menubtn">
+            </div> -->
+
+              <div class="menubtn">
                 <a class="btn1" href="menu.html">MENU</a>
             </div>
         </section>
     </div>
 
 
-        <section class="location">
+        <section class="location" data-aos="fade-right">
             <img src="img/location-mos.jpg" alt="">
             <div class="location-right">
                 <div class="location-info">
@@ -108,7 +144,7 @@
             </div>
         </section>
 
-        <section class="member">
+        <section class="member" data-aos="fade-left">
             <div class="member-left">
                 <div class="member-info">
                     <h1>會員好禮</h1>
@@ -122,7 +158,7 @@
             <img class="memberimg" src="img/member-mos.jpg" alt="">
         </section>
 
-        <section class="service">
+        <section class="service" data-aos="fade-up">
             <h1>更多服務</h1>
             <div class="servicecontent">
                 <ul>
@@ -195,5 +231,12 @@
         <a class="topbtn" href="#"><img src="img/scrolltop.png" alt=""></a>
     </div>
     
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

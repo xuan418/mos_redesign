@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Document</title>
+    <title>MOS Redesign</title>
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/burger.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <!------------------------header------------------------>
@@ -206,7 +208,8 @@
                     </div>
                 </section>
             </div>
-            <section class="Bottombtn">
+            <section class="Bottombtn"data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <div class="Button">
                     <a class="Backbtn" href="menu.html"><i class="fa-solid fa-chevron-left"></i>返回菜單</a>
                 </div>
@@ -272,5 +275,10 @@
     <a class="topbtn" href="#"><img src="img/scrolltop.png" alt=""></a>
 </div>
     
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
