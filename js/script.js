@@ -104,11 +104,19 @@ $(function(){
 
   })
 
-  $(function(){
+  document.addEventListener("DOMContentLoaded", function() {
+    var menuList = document.querySelector(".m_menulist");
+    var mainLink = document.querySelector(".m_menulist .main");
 
-    $('.main').click(function(){
+    mainLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        menuList.classList.toggle("show");
+    });
 
-      $('.nav_menulist').animate({maxHeight: 0},500);
-
-    })
-  })
+    window.addEventListener("click", function() {
+        if (menuList.classList.contains('show')) {
+            menuList.classList.remove('show');
+        }
+    });
+});
