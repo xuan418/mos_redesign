@@ -415,6 +415,8 @@ a.link i.fa-solid:hover{
         display: none;
     }
 
+    
+
     .m_menulist{
         display: block;
         width: calc(100vw - 20px);
@@ -451,7 +453,6 @@ a.link i.fa-solid:hover{
         width:calc(100vw - 20px) ;
 
         position: absolute;
-        display: none;
 
     }
 
@@ -471,6 +472,11 @@ a.link i.fa-solid:hover{
         border: 1px solid #d1d1d1;
         background-color: white;
 
+    }
+
+    .m_menulist ul li a:hover{
+        color: #E60012;
+        background-color:#ffeeef ;
     }
 
     .BG-category{
@@ -504,133 +510,6 @@ a.link i.fa-solid:hover{
 
 
 @media screen and (max-width: 576px) {
-
-    /*----------- banner------------- */
-    .banner{
-        margin-bottom: 60px;
-    }
-
-    .banner_map {
-        display: flex;
-        align-items: center;
-        height: 40px;
-        padding: 8px 10px;
-        box-sizing: border-box;
-    }
-
-    .banner_map a{
-        width: auto;
-        display: flex;
-        align-items: flex-start;
-        margin: 0 0 ;
-
-        color: #333;
-        text-decoration: none;
-    }
-
-    .banner_map a::after{
-        content: ">";
-        margin: 0 5px;
-    }
-
-    .banner_map a:last-child:after{
-        content: "";
-    }
-
-    /*-----------menu list------------- */
-
-    .nav-menu{
-        width: 100%;
-        height: 112px;
-        text-align: center;
-    }
-
-    .menu-list{
-        display: none;
-    }
-
-    .m_menulist{
-        display: block;
-        width: calc(100vw - 20px);
-        margin: 0 auto;
-        position: relative;
-        margin-bottom: 20px;
-    }
-
-    .m_menulist a.main{
-        width: calc(100vw - 20px);
-        height: 42px;
-        border: 1px solid #ccc;
-        padding: 0 20px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        text-decoration: none;
-        color: white;
-        background-color: #E60012;
-        font-weight: bold;
-
-        position: relative;
-    }
-
-    .m_menulist a.main i{
-        display: block;
-        color: white;
-    }
-
-    .m_menulist ul{
-        z-index: 10;
-        width:calc(100vw - 20px) ;
-
-        position: absolute;
-        display: none;
-
-    }
-
-    .m_menulist ul li a{
-        display: block;
-        text-decoration: none;
-        color: #333;
-        height: 42px;
-
-        display: flex;
-        justify-content: start;
-        align-items: center;
-
-        padding: 0 20px;
-        box-sizing: border-box;
-
-        border: 1px solid #d1d1d1;
-        background-color: white;
-
-    }
-
-    .BG-category{
-        width: 100%;
-        height: 50px;
-    
-    }
-    
-    .BG-category ul{
-        width: calc( 100vw - 20px);
-        height: 100%;
-        margin: 0 10px;
-        display: inline-block;
-        text-align: center;
-    }
-
-    
-    .BG-category a{
-        font-size: 14px;
-        color: #333;
-        text-decoration: none;
-    
-        width: auto;
-        height: 50px;
-        line-height: 50px;
-    }
 
     /*-----------漢堡種類大標------------- */
 

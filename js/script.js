@@ -103,3 +103,12 @@ $(function(){
   });
 
   })
+
+  $(function(){
+
+    $('.main').click(function(){
+
+      $('.nav_menulist').animate({maxHeight: 0},500);
+
+    })
+  })
