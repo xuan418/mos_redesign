@@ -306,7 +306,7 @@ header{
 /* ------------------------footer------------------------ */
 
 footer{
-    background-color: #A0D99E;
+    background-color: #f5f5f5;
     width: 100%;
     height: auto;
 }
@@ -322,7 +322,7 @@ footer{
     width: 100%;
     padding-bottom: 16px;
     box-sizing: border-box;
-    border-bottom:0.5px solid #62945B;
+    border-bottom: 0.5px solid #ccc;
 }
 
 .map{
@@ -355,7 +355,7 @@ footer{
 }
 
 .map a:hover{
-    text-decoration: underline;
+    color:#ccc;
 }
 
 
@@ -388,7 +388,7 @@ footer{
 }
 
 .ftsocial a i:hover{
-    color:#E60012;
+    color:#ccc;
 }
 
 .ftright {
@@ -408,7 +408,7 @@ footer{
 .ftfont span{
     padding: 0 20px;
     font-size: 12px;
-    color: #62945B;
+    color: #666;
     display: flex;
     justify-content: flex-end;
 }
@@ -562,7 +562,6 @@ footer{
     }
 
     .ftconnection{
-        padding: 16px 0px 0px;
         display: flex;
         flex-direction: column;
 
@@ -582,7 +581,7 @@ footer{
         justify-content: center;
         align-content: center;
         gap: 8px;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
     }
 
     .ftsocial a{
@@ -630,8 +629,14 @@ footer{
         gap: 8px;
     }
 
+    .ftfont{
+        padding: 0 20px ;
+        justify-content: center;
+    }
+
     .ftfont span{
         padding: 0 0 ;
+        display: flex;
         justify-content: center;
     }
 

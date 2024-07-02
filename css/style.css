@@ -142,8 +142,8 @@ body{
 .burger .swiper {
     width: 100%;
 }
-.burger .swiper-slide {
 
+.burger .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +154,7 @@ body{
     font-size: 16px;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
+    padding: 20px 0px;
     box-sizing: border-box;
 }
 
@@ -165,8 +165,7 @@ body{
 
 .burger .swiper-slide img {
     display: block;
-    width: 200px;
-    height: 187px;
+    width: 230px;
     object-fit: cover;
     margin-bottom: 20px;
 
@@ -430,7 +429,54 @@ body{
     }
 
     .burger{
-        padding: 100px 100px;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 40px;
+        margin-bottom: 60px;
+        
+    }
+
+    .burger h1{
+        font-size: 32px;
+        height: 30px;
+        margin-bottom: 50px;
+    }
+
+    .burger .swiper {
+        width: 100%;
+
+    }
+    .burger .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .burger .swiper-slide a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+    
+    .burger .swiper-slide a:hover{
+        transform:scale(1.2,1.2);
+    }
+    
+    .burger .swiper-slide img {
+        display: block;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .menubtn{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .btn1{
+        margin-top: 0px;
     }
 
     .location-right h2{
@@ -502,51 +548,6 @@ body{
         padding: 60px 40px;
         margin-bottom: 60px;
         
-    }
-
-    .burger h1{
-        font-size: 32px;
-        height: 30px;
-        margin-bottom: 50px;
-    }
-
-    .burger .swiper {
-        width: 100%;
-    }
-    .burger .swiper-slide {
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .burger .swiper-slide a{
-        text-decoration: none;
-        font-size: 16px;
-        color: #333;
-        line-height: 1.6;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    
-    .burger .swiper-slide a:hover{
-        transform:scale(1.2,1.2);
-    }
-    
-    .burger .swiper-slide img {
-        display: block;
-        width: 150px;
-        height: auto;
-        object-fit: cover;
-        margin-bottom: 20px;
-    }
-
-    .menubtn{
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-    .btn1{
-        margin-top: 0px;
     }
 
     .location{
@@ -736,6 +737,14 @@ body{
     @media screen and (max-width: 576px) {
         .burger{
             padding: 0 20px;
+        }
+
+        .burger .swiper-slide img {
+            display: block;
+            width: 250px;
+            object-fit:cover;
+            margin-bottom: 20px;
+        
         }
     
     }
