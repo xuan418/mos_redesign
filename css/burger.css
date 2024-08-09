@@ -82,6 +82,7 @@ body{
     height: 41px;
     line-height: 41px;
     font-size: 28px;
+    font-weight: 550;
 }
 
 
@@ -175,8 +176,8 @@ body{
     font-size: 22px;
     height: 81px;
     line-height: 81px;
-    color: #E60012;
-    font-weight: bold;
+    color: #333;
+    font-weight: 400;
 }
 
 .upsetcard{

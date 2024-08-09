@@ -135,7 +135,7 @@ body{
 .burger h1{
     font-size: 36px;
     margin-bottom:100px;
-    color: #E60012;
+    color: #333;
     font-weight: bold;
 }
 
@@ -240,7 +240,7 @@ body{
 
 .location-right h1{
     font-size: 36px;
-    color: #E60012;
+    color: #333333;
     font-weight: bold;
     width: 100%;
     margin: 0 auto 30px; 
@@ -313,7 +313,7 @@ body{
 .member-left h1{
     width: 100%;
     font-size: 36px;
-    color: #E60012;
+    color: #333333;
     font-weight: bold;
     margin: 0 auto 30px; 
 }
@@ -370,7 +370,7 @@ body{
 
 .service h1{
     font-size:36px;
-    color: #E60012;
+    color: #333333;
     font-weight: bold;
     margin-bottom: 100px;
 }
@@ -577,7 +577,7 @@ body{
     
     .location-right h1{
         font-size: 32px;
-        color: #E60012;
+        color: #333333;
         font-weight: bold;
         width: 100%;
         margin: 0 auto 12px; 
@@ -620,7 +620,7 @@ body{
     
     .member-left h1{
         font-size: 32px;
-        color: #E60012;
+        color: #333333;
         font-weight: bold;
         width: 100%;
         margin: 0 auto 12px; 
